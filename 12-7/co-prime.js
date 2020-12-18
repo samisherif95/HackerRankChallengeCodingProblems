@@ -26,4 +26,4 @@ function helper(val) {
 }
 
 
-explanation link https: //cp-algorithms.com/algebra/phi-function.html
+//explanation link https: //cp-algorithms.com/algebra/phi-function.html
