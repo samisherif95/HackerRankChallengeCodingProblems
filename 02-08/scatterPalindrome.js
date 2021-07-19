@@ -1,10 +1,12 @@
+// ['aabb', 'tacocat'] => a, aa, aab, aabb, a, abb, b, bb, b => 9
+
 function scatterPalindrome(string) {
     let result = []
     for (let i = 0; i < string.length; i++) {
         let str = string[i];
-        let count = 0
-        for (let j = 0; j < str.length; j++) {
-            let set = new Set();
+        let count = 0                         //   j 
+        for (let j = 0; j < str.length; j++) { // aabb
+            let set = new Set(); //{}
             for (let k = j; k < str.length; k++) {
                 if (set.has(str[k])) {
                     set.delete(str[k])
